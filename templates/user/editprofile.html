@@ -1,0 +1,90 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{% extends 'user/userindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="/myapp/us_editprofile_post/" enctype="multipart/form-data">
+    {% csrf_token %}
+  <table class="table table-bordered table-striped table-hover">
+        <thead class="thead-dark">
+    <tr>
+      <td >Name</td>
+      <td><input type="text" name="textfield" id="textfield" value="{{ doc.name }}"/></td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td><p>
+        <label>
+          <input type="radio" name="RadioGroup1" value="Male" {% if doc.gender == 'Male' %}checked{% endif %}  id="RadioGroup1_0" />
+          Male</label>
+        <br />
+        <label>
+          <input type="radio" name="RadioGroup1" value="Female" {% if doc.gender == 'Female' %}checked{% endif %}  id="RadioGroup1_1" />
+          Female</label>
+        <br />
+        <label>
+          <input type="radio" name="RadioGroup1" value="others" {% if doc.gender == 'others' %}checked{% endif %}  id="RadioGroup1_2" />
+          others</label>
+        <br />
+      </p></td>
+    </tr>
+    <tr>
+      <td>DOB</td>
+      <td><input type="date" name="textfield2" id="textfield2" value="{{ doc.dob  | date:'Y-m-d'}}"  /></td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><input type="text" name="textfield3" id="textfield3" value="{{ doc.email }}"/></td>
+    </tr>
+    <tr>
+      <td>Phone</td>
+      <td><input type="text" name="textfield4" id="textfield4" value="{{ doc.phone }}"/></td>
+    </tr>
+    <tr>
+      <td>HouseName</td>
+      <td><input type="text" name="textfield5" id="textfield5" value="{{ doc.housename }}"/></td>
+    </tr>
+    <tr>
+      <td>Place</td>
+      <td><input type="text" name="textfield6" id="textfield6" value="{{ doc.place }}"/></td>
+    </tr>
+    <tr>
+      <td>City</td>
+      <td><input type="text" name="textfield7" id="textfield7" value="{{ doc.city }}" /></td>
+    </tr>
+    <tr>
+      <td>State</td>
+      <td><input type="text" name="textfield8" id="textfield8" value="{{ doc.state }}"/></td>
+    </tr>
+    <tr>
+      <td>Pincode</td>
+      <td><input type="text" name="textfield9" id="textfield9" value="{{ doc.pincode }}"/></td>
+    </tr>
+{#    <tr>#}
+{#      <td>Photo</td>#}
+{#      <td class="text-center">#}
+{#                {% if doc.photo %}#}
+{#                  <img src="{{ doc.photo }}" alt="Photo" class="img-thumbnail" style="max-width: 100px;">#}
+{#                {% else %}#}
+{#                  No Photo#}
+{#                {% endif %}#}
+{#          <input type="file" name="textfield10" id="textfield10" /></td>#}
+{#    </tr>#}
+    <tr>
+      <td>&nbsp;</td>
+      <td><input type="submit" name="button" id="button" value="update" class="btn btn-success" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+        </thead>
+  </table>
+</form>
+</body>
+{% endblock %}
+{#</html>#}

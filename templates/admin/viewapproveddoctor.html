@@ -1,0 +1,63 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{% extends 'admin/adminIndex.html' %}
+{% block body %}
+<body>
+<div class="container mt-5">
+    <form action="/myapp/viewdoctor_post/" method="post">
+      {% csrf_token %}
+      <div class="row mb-2">
+        <div class="pull-left">
+          <input type="text" name="textfield" required id="textfield" class="form-control" placeholder="Search by name or specialization"/>
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-warning" id="button" style="font-size: 16px; padding: 10px 20px; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease;">Search</button>
+        </div>
+      </div>
+  <table class="table table-bordered table-striped table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th class="text-center">Sno</th>
+      <th class="text-center">Name</th>
+      <th class="text-center">Gender</th>
+      <th class="text-center">Dob</th>
+      <th class="text-center">Email</th>
+      <th class="text-center">Phone</th>
+      <th class="text-center">Address</th>
+{#      <th class="text-center">Photo</th>#}
+      <th class="text-center">Specialization</th>
+      <th class="text-center">Hospital name</th>
+      <th class="text-center">About</th>
+      <th class="text-center">Experience</th>
+      <th class="text-center">Qualification</th>
+    </tr>
+    </thead>
+
+     {% for i in doc %}
+    <tr>
+      <td>{{ forloop.counter }}</td>
+      <td>&nbsp;{{ i.name }}</td>
+      <td>{{ i.gender }}</td>
+      <td>&nbsp;{{ i.DOB }}</td>
+      <td>&nbsp;{{ i.email }}</td>
+      <td>&nbsp;{{ i.phone }}</td>
+        <td>&nbsp;{{ i.housename }} <br>{{ i.place }}<br>{{ i.city }}<br>{{ i.state }}<br>{{ i.pincode }}</td>
+{#      <td>&nbsp;{{ i.photo }}</td>#}
+      <td>&nbsp;{{ i.Specification }}</td>
+      <td>&nbsp;{{ i.HospitalName }}</td>
+        <td>&nbsp;{{ i.About }}</td>
+        <td>&nbsp;{{ i.HospitalName }}</td>
+        <td>{{ i.Experience }}</td>
+        <td>{{ i.Qualification }}</td>
+    </tr>
+      {% endfor %}
+
+  </table>
+</form>
+</body>
+{% endblock %}
+{#</html>#}

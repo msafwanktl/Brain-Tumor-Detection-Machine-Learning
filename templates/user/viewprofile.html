@@ -1,0 +1,67 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{% extends 'user/userindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post">
+  <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <td>Name</td>
+        <td>{{ doc.name }}</td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>{{ doc.gender }}</td>
+      </tr>
+      <tr>
+        <td>DOB</td>
+        <td>{{ doc.dob }}</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>{{ doc.email }}</td>
+      </tr>
+      <tr>
+        <td>Phone</td>
+        <td>{{ doc.phone }}</td>
+      </tr>
+      <tr>
+        <td>HouseName</td>
+        <td>{{ doc.housename }}</td>
+      </tr>
+      <tr>
+        <td>Place</td>
+        <td>{{ doc.place }}</td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td>{{ doc.city }}</td>
+      </tr>
+      <tr>
+        <td>State</td>
+        <td>{{ doc.state }}</td>
+      </tr>
+      <tr>
+        <td>Pincode</td>
+        <td>{{ doc.pincode }}</td>
+      </tr>
+{#      <tr>#}
+{#        <td>Photo</td>#}
+{#        <td class="text-center">#}
+{#            <img src="{{ doc.photo }}" alt="Photo">#}
+{#        </td>#}
+{#      </tr>#}
+      <tr>
+        <td><a href="/myapp/us_editprofile/{{ i.id }}" class="btn btn-success">Edit</a></td>
+      </tr>
+    </thead>
+  </table>
+</form>
+</body>
+{% endblock %}
+{#</html>#}

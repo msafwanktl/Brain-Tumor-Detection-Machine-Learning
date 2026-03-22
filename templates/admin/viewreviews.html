@@ -1,0 +1,46 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{% extends 'admin/adminIndex.html' %}
+{% block body %}
+<body>
+  <div class="container mt-5">
+    <form action="/myapp/viewdoctor_post/" method="post">
+      {% csrf_token %}
+      <div class="row mb-2">
+        <div class="pull-left">
+          <input type="text" name="textfield" required id="textfield" class="form-control" placeholder="Search by name or specialization"/>
+        </div>
+        <div class="col-md-2">
+          <button type="submit" class="btn btn-warning" id="button" style="font-size: 16px; padding: 10px 20px; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: all 0.3s ease;">Search</button>
+        </div>
+      </div>
+
+      <table class="table table-bordered table-striped table-hover">
+        <thead class="thead-dark">
+    <tr>
+    <th class="text-center">Sno</th>
+    <th class="text-center">Date</th>
+    <th class="text-center">User</th>
+    <th class="text-center">Doctor</th>
+    <th class="text-center">Review</th>
+  </tr>
+    </thead>
+      {% for i in doc %}
+  <tr>
+    <td>&nbsp;{{ forloop.counter }}</td>
+    <td>&nbsp;{{ i.date}}</td>
+    <td>&nbsp;{{ i.USER.name }}</td>
+    <td>&nbsp;{{ i.DOCTOR.name }}</td>
+    <td>&nbsp;{{ i.review }}</td>
+  </tr>
+        {% endfor %}
+</table>
+
+</form>
+</body>
+{% endblock %}
+{#</html>#}

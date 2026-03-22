@@ -1,0 +1,36 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{% extends 'doctor/doctorindex.html' %}
+{% block body %}
+<body>
+<form action="/myapp/addschedule_post/" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table class="table table-bordered">
+    <thead class="thead-dark">
+      <tr>
+        <td>Date</td>
+        <td><input type="date" required name="textfield" id="textfield" /></td>
+      </tr>
+      <tr>
+        <td>Starting Time</td>
+        <td><input type="time" required name="textfield2" id="textfield2" /></td>
+      </tr>
+      <tr>
+        <td>Ending Time</td>
+        <td><input type="time" required name="textfield3" id="textfield3" /></td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><input type="submit" name="button" id="button" value="Submit" class="btn btn-success" /></td>
+      </tr>
+    </thead>
+    </table>
+</form>
+</body>
+
+{% endblock %}
+{#</html>#}

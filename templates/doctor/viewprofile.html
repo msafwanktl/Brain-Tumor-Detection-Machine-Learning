@@ -1,0 +1,96 @@
+{#<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">#}
+{#<html xmlns="http://www.w3.org/1999/xhtml">#}
+{#<head>#}
+{#<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />#}
+{#<title>Untitled Document</title>#}
+{#</head>#}
+{% extends 'doctor/doctorindex.html' %}
+{% block body %}
+<body>
+<form id="form1" name="form1" method="post" action="" enctype="multipart/form-data">
+  <table class="table table-bordered table-striped table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <td>Name</td>
+        <td>{{ doc.name }}</td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>{{ doc.gender }}</td>
+      </tr>
+      <tr>
+        <td>DOB</td>
+        <td>{{ doc.DOB }}</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>{{ doc.email }}</td>
+      </tr>
+      <tr>
+        <td>Phone</td>
+        <td>{{ doc.phone }}</td>
+      </tr>
+      <tr>
+        <td>HouseName</td>
+        <td>{{ doc.housename }}</td>
+      </tr>
+      <tr>
+        <td>Place</td>
+        <td>{{ doc.place }}</td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td>{{ doc.city }}</td>
+      </tr>
+      <tr>
+        <td>State</td>
+        <td>{{ doc.state }}</td>
+      </tr>
+      <tr>
+        <td>Pincode</td>
+        <td>{{ doc.pincode }}</td>
+      </tr>
+{#      <tr>#}
+{#        <td>Photo</td>#}
+{#        <td class="text-center">#}
+{#          {% if doc.photo %}#}
+{#            <img src="{{ doc.photo }}" alt="Photo" class="img-thumbnail" style="max-width: 100px;">#}
+{#          {% else %}#}
+{#            No Photo#}
+{#          {% endif %}#}
+{#        </td>#}
+{#      </tr>#}
+      <tr>
+        <td>Specialisation</td>
+        <td>{{ doc.Specialisation }}</td>
+      </tr>
+      <tr>
+        <td>HospitalName</td>
+        <td>{{ doc.HospitalName }}</td>
+      </tr>
+      <tr>
+        <td>About</td>
+        <td>{{ doc.About }}</td>
+      </tr>
+      <tr>
+        <td>Experience</td>
+        <td>{{ doc.Experience }}</td>
+      </tr>
+      <tr>
+        <td>Qualification</td>
+        <td>{{ doc.Qualification }}</td>
+      </tr>
+      <tr>
+        <td>Status</td>
+        <td>{{ doc.Status }}</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td><a href="/myapp/dr_editprofile/{{ i.id }}" class="btn">Edit</a></td>
+      </tr>
+    </thead>
+  </table>
+</form>
+</body>
+{% endblock %}
+{#</html>#}
