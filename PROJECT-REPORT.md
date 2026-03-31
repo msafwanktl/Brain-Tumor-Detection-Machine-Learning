@@ -1,20 +1,20 @@
-**AI Brain Tumor Detection Using MRI Scanned Images**
+# AI Brain Tumour Detection Using MRI Scanned Images
 
 **Abstract**\
-This project aims to develop an AI-based system for detecting brain tumors using MRI scans. The system leverages machine learning techniques to analyze high-resolution MRI images and predict the presence of tumors. The project consists of three primary modules: Admin, Doctor, and User. The Admin manages doctors and users, the Doctor schedules appointments and adds prescriptions, while the User can book appointments and utilize the AI-based tumor detection service. The system is implemented as a web-based application using Python, Django, HTML, CSS, and JavaScript.
+This project aims to develop an AI-based system for detecting brain tumours using MRI scans. The system leverages machine learning techniques to analyse high-resolution MRI images and predict the presence of tumours. The project consists of three primary modules: Admin, Doctor, and User. The Admin manages doctors and users, the Doctor schedules appointments and adds prescriptions, while the User can book appointments and utilise the AI-based tumour detection service. The system is implemented as a web-based application using Python, Django, HTML, CSS, and JavaScript.
 
 ---
 
 **1. Introduction**\
-Brain tumors are one of the most critical health conditions requiring early detection and treatment. Traditional methods of diagnosing brain tumors through manual radiological assessment can be time-consuming and prone to errors. This project aims to automate and enhance the tumor detection process using artificial intelligence (AI) by analyzing MRI scans and providing accurate predictions to assist doctors in diagnosing tumors.
+Brain tumours are one of the most critical health conditions requiring early detection and treatment. Traditional methods of diagnosing brain tumours through manual radiological assessment can be time-consuming and prone to errors. This project aims to automate and enhance the tumour detection process using artificial intelligence (AI) by analysing MRI scans and providing accurate predictions to assist doctors in diagnosing tumours.
 
 ---
 
 **2. System Study & Analysis**\
 2.1 Preliminary Investigation
 
-- **Problem Definition**: The increasing cases of brain tumors necessitate early and accurate detection techniques. Manual diagnosis is error-prone and time-consuming, requiring an automated approach.
-- **Stakeholder Analysis**: The stakeholders include doctors, radiologists, patients, and hospital management who will benefit from the AI-driven tumor detection system.
+- **Problem Definition**: The increasing cases of brain tumours necessitate early and accurate detection techniques. Manual diagnosis is error-prone and time-consuming, requiring an automated approach.
+- **Stakeholder Analysis**: The stakeholders include doctors, radiologists, patients, and hospital management who will benefit from the AI-driven tumour detection system.
 - **Technology Review**: AI and deep learning techniques have shown promising results in medical imaging analysis. Convolutional Neural Networks (CNNs) are widely used for image classification tasks.
 - **Regulatory & Policy Considerations**: Ensuring compliance with medical data privacy laws such as HIPAA and GDPR.
 - **Market Research**: There is a growing demand for AI-assisted diagnostics, with healthcare institutions adopting AI models for improved patient care.
@@ -23,16 +23,16 @@ Brain tumors are one of the most critical health conditions requiring early dete
 
 - Manual MRI scan analysis by radiologists, which is time-consuming and requires expert interpretation.
 - High dependency on human expertise, leading to possible diagnostic errors.
-- Limited accessibility, as only specialized medical centers can provide detailed analysis.
+- Limited accessibility, as only specialised medical centres can provide detailed analysis.
 - No real-time prediction, requiring patients to wait for results.
 
 2.3 Proposed System
 
-- AI-driven automated MRI image analysis for tumor detection.
+- AI-driven automated MRI image analysis for tumour detection.
 - A web-based platform for patients and doctors to interact seamlessly.
 - Secure data management and processing using cloud-based storage.
 - Faster and more accurate detection, reducing reliance on human interpretation.
-- Cost-effective and scalable approach for hospitals and diagnostic centers.
+- Cost-effective and scalable approach for hospitals and diagnostic centres.
 
 2.4 Feasibility Study
 
