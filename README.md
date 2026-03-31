@@ -1,47 +1,47 @@
 # Brain-Tumor-Detection-Machine-Learning-
 Brain Tumour Detection Using Machine Learning is a Website used to upload MRI scanned images and detect Tumor
 This is basically a website that provides separate sections for Admin, Doctor, and User, and they can use seperate sections to make there works and tasks within their interface. 
-# admin:
+# Admin:
  
-  log in
-  registered doctors
-  approved doctors
-  declined doctors
-  View reviews about doctors from users
-  View registered users 
-  change password
-  log out
+  log in<br>
+  registered doctors<br>
+  approved doctors<br>
+  declined doctors<br>
+  View reviews about doctors from users<br>
+  View registered users <br>
+  change password<br>
+  log out<br>
 
-# doctor:
+# Doctor:
 
-  sign in
-  log in
-  view profile
-  profile edit
-  add schedule
-  schedule view 
-  schedule edit
-  appointment view
-  upload prescription
-  Brain Tumour Prediction
-  change password
-  log out
+  sign in<br>
+  log in<br>
+  view profile<br>
+  profile edit<br>
+  add schedule<br>
+  schedule view <br>
+  schedule edit<br>
+  appointment view<br>
+  upload prescription<br>
+  Brain Tumour Prediction<br>
+  change password<br>
+  log out<br>
 
-# user:
+# User:
 
-  sign in
-  log in 
-  view profile
-  edit profile
-  view doctorss
-  schedule view
-  make appointment
-  view appointment 
-  cancel appointment
-  prescription view
-  Brain Tumour Prediction 
-  Send review about doctors
-  change password
-  log out
+  sign in<br>
+  log in <br>
+  view profile<br>
+  edit profile<br>
+  view doctorss<br>
+  schedule view<br>
+  make appointment<br>
+  view appointment <br>
+  cancel appointment<br>
+  prescription view<br>
+  Brain Tumour Prediction <br>
+  Send review about doctors<br>
+  change password<br>
+  log out<br><br>
 
   These are the modules I have Created for this project.
